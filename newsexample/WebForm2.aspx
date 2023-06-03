@@ -26,6 +26,13 @@
     float: right;
     width: 50%;
         }
+
+        body {
+            background-image: url('\image\web.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: transparent;
+        }
     </style>
     <form id="form1" runat="server">
         <div>

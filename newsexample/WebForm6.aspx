@@ -8,9 +8,10 @@
     <title></title>
     <style>
         body {
-            background-image: url('image/background.jpg');
+            background-image: url('\image\web.jpg');
             background-repeat: no-repeat;
             background-size: cover;
+            background-color: transparent;
         }
     </style>
 </head>

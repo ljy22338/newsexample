@@ -29,6 +29,14 @@
     display: block;
     padding: 10px;
 }
+
+        body {
+            background-image: url('\image\web.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: transparent;
+        }
+
             /* ul {
                 color:#ff0000;
                 line-height:2;
