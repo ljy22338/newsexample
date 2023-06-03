@@ -1,14 +1,10 @@
-﻿using MySql.Data.MySqlClient;
+﻿using newsexample;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
-using static WebApplication6.GlobalMysql;
+using static newsexample.GlobalMysql;
 
 namespace WebApplication6
 {
@@ -21,7 +17,7 @@ namespace WebApplication6
 
             if (!IsPostBack)
             {
-                List<Item> items = Global.globalMysql.getArticle();
+                List<Item> items = MvcApplication.globalMysql.getArticle();
                 items = items.Select(x => {
                     x.Col2 = x.Col2.Length > 50 ? x.Col2.Substring(0, 50) : x.Col2;
                     return x;
@@ -35,20 +31,6 @@ namespace WebApplication6
 
 
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            var usernameText = username.Text;
-            var passwordText = password.Text;
 
-            if (passwordText == "qazxcv" && usernameText == "admin")
-            {
-                Response.Redirect("WebForm2.aspx");
-            }
-            else
-            {
-                ClientScript.RegisterStartupScript(this.GetType(),
-                   "alert", "alert('密码错误!')", true);
-            }
-        }
     }
 }
