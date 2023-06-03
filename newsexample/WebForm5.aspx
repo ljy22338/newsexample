@@ -7,8 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style>
-        .body {
-            background-image: url('images/web.png');
+        body {
+            background-image: url('images/web.jpg');
             background-repeat: no-repeat;
             background-size: cover;
         }
